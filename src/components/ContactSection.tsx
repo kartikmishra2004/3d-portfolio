@@ -100,6 +100,7 @@ export default function ContactSection() {
         {contactItems.map((item, index) => {
           const Icon = item.icon;
           const isCopied = copiedType === item.type;
+            const isPlainText = item.type === 'email' || item.type === 'instagram';
 
           return (
             <FadeIn key={item.type} delay={0.3 + index * 0.1} y={30} className="w-full">
@@ -112,7 +113,9 @@ export default function ContactSection() {
                     <span className="text-[10px] sm:text-xs text-[#D7E2EA]/60 uppercase tracking-wider font-medium leading-none mb-0.5 sm:mb-1">
                       {item.label}
                     </span>
-                    <span className="text-xs sm:text-base font-bold text-white tracking-wide truncate leading-none">
+                    <span
+                      className={isPlainText ? 'text-xs sm:text-base font-normal text-[#D7E2EA]/85 truncate leading-none' : 'text-xs sm:text-base font-bold text-white tracking-wide truncate leading-none'}
+                    >
                       {item.value}
                     </span>
                   </div>

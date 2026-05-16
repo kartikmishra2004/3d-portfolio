@@ -33,7 +33,7 @@ export default function ProjectCard({ project, index, totalCards, progress }: Pr
           top: `${index * 28}px`,
           backgroundColor: '#0C0C0C',
         }}
-        className="relative w-full max-w-[1760px] rounded-[24px] sm:rounded-[40px] md:rounded-[60px] border-2 border-[#D7E2EA] p-4 sm:p-6 md:p-8 flex flex-col gap-6 sm:gap-8 md:gap-10 origin-top mx-auto"
+        className="relative w-full max-w-[1760px] rounded-[24px] sm:rounded-[24px] md:rounded-[60px] border-2 border-[#D7E2EA] p-4 sm:p-6 md:p-8 flex flex-col gap-6 sm:gap-8 md:gap-10 origin-top mx-auto"
       >
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 sm:gap-4">
           <div className="flex items-center gap-6 sm:gap-8 md:gap-10">
@@ -64,13 +64,13 @@ export default function ProjectCard({ project, index, totalCards, progress }: Pr
             <img
               src={project.images.col1[0]}
               alt={`${project.name} preview 1`}
-              className="w-full object-cover rounded-[16px] sm:rounded-[32px] md:rounded-[60px] flex-1"
+              className="w-full object-cover rounded-[16px] sm:rounded-[16px] md:rounded-[60px] flex-1"
               style={{ minHeight: 'clamp(130px, 16vw, 230px)' }}
             />
             <img
               src={project.images.col1[1]}
               alt={`${project.name} preview 2`}
-              className="w-full object-cover rounded-[16px] sm:rounded-[32px] md:rounded-[60px] flex-1"
+              className="w-full object-cover rounded-[16px] sm:rounded-[16px] md:rounded-[60px] flex-1"
               style={{ minHeight: 'clamp(160px, 22vw, 340px)' }}
             />
           </div>
@@ -78,7 +78,7 @@ export default function ProjectCard({ project, index, totalCards, progress }: Pr
           <img
             src={project.images.col2}
             alt={`${project.name} main`}
-            className="w-full md:w-[60%] object-cover rounded-[16px] sm:rounded-[32px] md:rounded-[60px] h-auto self-stretch"
+            className="w-full md:w-[60%] object-cover rounded-[16px] sm:rounded-[16px] md:rounded-[60px] h-auto self-stretch"
           />
         </div>
       </motion.div>

@@ -67,7 +67,7 @@ export default function MarqueeSection() {
             {[...ROW_1, ...ROW_1, ...ROW_1].map((src, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 rounded-xl sm:rounded-2xl overflow-hidden border border-zinc-600 w-[280px] sm:w-[360px] md:w-[420px] lg:w-[500px] xl:w-[600px] h-[180px] sm:h-[230px] md:h-[270px] lg:h-[320px] xl:h-[380px] transition-all duration-300 shadow-lg"
+                className="flex-shrink-0 rounded-xl sm:rounded-2xl overflow-hidden border border-zinc-600 w-[280px] sm:w-[360px] md:w-[380px] lg:w-[420px] xl:w-[460px] h-[180px] sm:h-[230px] md:h-[245px] lg:h-[270px] xl:h-[295px] transition-all duration-300 shadow-lg"
               >
                 <img
                   src={src}
@@ -92,7 +92,7 @@ export default function MarqueeSection() {
             {[...ROW_2, ...ROW_2, ...ROW_2].map((src, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 rounded-xl sm:rounded-2xl overflow-hidden border border-zinc-600 w-[280px] sm:w-[360px] md:w-[420px] lg:w-[500px] xl:w-[600px] h-[180px] sm:h-[230px] md:h-[270px] lg:h-[320px] xl:h-[380px] transition-all duration-300 shadow-lg"
+                className="flex-shrink-0 rounded-xl sm:rounded-2xl overflow-hidden border border-zinc-600 w-[280px] sm:w-[360px] md:w-[380px] lg:w-[420px] xl:w-[460px] h-[180px] sm:h-[230px] md:h-[245px] lg:h-[270px] xl:h-[295px] transition-all duration-300 shadow-lg"
               >
                 <img
                   src={src}

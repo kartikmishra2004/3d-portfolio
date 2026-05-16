@@ -6,67 +6,67 @@ import FadeIn from './FadeIn';
 const projects = [
   {
     number: '01',
-    category: 'Client',
+    category: 'Roofing Landing Page',
     name: 'Rooftop Heroes',
     href: 'https://rooftop-heroes.vercel.app',
     images: {
       col1: [
-        '/images/project-rooftop-heroes.png',
-        '/images/project-rooftop-heroes.png',
+        '/images/rooftop-heroes-2.png',
+        '/images/rooftop-heroes-3.png',
       ],
-      col2: '/images/project-rooftop-heroes.png',
+      col2: '/images/rooftop-heroes-1.png',
     },
   },
   {
     number: '02',
-    category: 'Client',
+    category: 'Ecommerce Platform',
     name: 'Zolivine',
     href: 'https://zolivine.vercel.app',
     images: {
       col1: [
-        '/images/project-zolivine.png',
-        '/images/project-zolivine.png',
+        '/images/zolivine-3.png',
+        '/images/zolivine-2.png',
       ],
-      col2: '/images/project-zolivine.png',
+      col2: '/images/zolivine-1.png',
     },
   },
   {
     number: '03',
-    category: 'Personal',
+    category: 'AI Travel Assistant',
     name: 'Voyager',
     href: 'https://tryvoyagerai.com',
     images: {
       col1: [
-        '/images/project-voyager.png',
-        '/images/project-voyager.png',
+        '/images/voyager-2.png',
+        '/images/voyager-3.png',
       ],
-      col2: '/images/project-voyager.png',
+      col2: '/images/voyager-1.png',
     },
   },
   {
     number: '04',
-    category: 'Client',
+    category: 'Music Collaboration Platform',
     name: 'Ordiio',
     href: 'https://app.ordiio.com',
     images: {
       col1: [
-        '/images/project-ordiio.png',
-        '/images/project-ordiio.png',
+        '/images/ordiio-2.png',
+        '/images/ordiio-3.png',
       ],
-      col2: '/images/project-ordiio.png',
+      col2: '/images/ordiio-1.png',
     },
   },
   {
     number: '05',
-    category: 'Client',
-    name: 'Wahu Hero',
+    category: 'Real Estate Landing Page',
+    name: 'SquarFT',
     href: 'https://play.google.com/store/apps/details?id=com.build.wahu',
     images: {
       col1: [
-        '/images/project-wahu.png',
-        '/images/project-wahu.png',
+        '/images/sq2.png',
+        '/images/sq3.png',
       ],
-      col2: '/images/project-wahu.png',
+      col2: '/images/sq1.png',
     },
   },
 ];
@@ -90,7 +90,7 @@ export default function ProjectsSection() {
     <motion.section
       id="work"
       ref={containerRef}
-      className="relative px-5 sm:px-8 md:px-12 -mt-10 sm:-mt-12 md:-mt-14 z-10 pb-24 sm:pb-32 md:pb-48"
+      className="relative px-1.5 sm:px-8 md:px-12 -mt-10 sm:-mt-12 md:-mt-14 z-10 pb-24 sm:pb-32 md:pb-48"
       style={{
         backgroundColor: '#0C0C0C',
         borderTopLeftRadius,
@@ -103,7 +103,7 @@ export default function ProjectsSection() {
             className="hero-heading font-black uppercase leading-none tracking-tight text-center w-full"
             style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
           >
-            Work
+            Portfolio
           </h2>
         </FadeIn>
       </div>

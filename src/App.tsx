@@ -5,7 +5,7 @@ import HeroSection from './components/HeroSection';
 import MarqueeSection from './components/MarqueeSection';
 import AboutSection from './components/AboutSection';
 import ExperienceSection from './components/ExperienceSection';
-import ProjectsSection from './components/ProjectsSection';
+import ProjectsSection from './components/PortfolioSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
 

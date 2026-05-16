@@ -43,12 +43,15 @@ export default function ProjectCard({ project, index, totalCards, progress }: Pr
             >
               {project.number}
             </span>
-            <div className="flex flex-col gap-2 sm:gap-4 md:gap-6 justify-center">
+            <div className="flex flex-col gap-0 sm:gap-1 justify-center">
               <span
                 className="text-[#D7E2EA] font-light tracking-wide uppercase"
                 style={{ fontSize: 'clamp(0.9rem, 2vw, 2rem)' }}
               >
                 {project.name}
+              </span>
+              <span className="text-[#A0A0A0] font-light uppercase text-xs sm:text-sm">
+                {project.category}
               </span>
             </div>
           </div>
@@ -56,26 +59,26 @@ export default function ProjectCard({ project, index, totalCards, progress }: Pr
           <LiveProjectButton href={project.href} className="w-full sm:w-auto" />
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 md:gap-5 w-full">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-5 w-full items-stretch">
           <div className="flex flex-col gap-4 md:gap-5 w-full md:w-[40%]">
             <img
               src={project.images.col1[0]}
               alt={`${project.name} preview 1`}
-              className="w-full object-cover rounded-[16px] sm:rounded-[32px] md:rounded-[60px]"
-              style={{ height: 'clamp(130px, 16vw, 230px)' }}
+              className="w-full object-cover rounded-[16px] sm:rounded-[32px] md:rounded-[60px] flex-1"
+              style={{ minHeight: 'clamp(130px, 16vw, 230px)' }}
             />
             <img
               src={project.images.col1[1]}
               alt={`${project.name} preview 2`}
-              className="w-full object-cover rounded-[16px] sm:rounded-[32px] md:rounded-[60px]"
-              style={{ height: 'clamp(160px, 22vw, 340px)' }}
+              className="w-full object-cover rounded-[16px] sm:rounded-[32px] md:rounded-[60px] flex-1"
+              style={{ minHeight: 'clamp(160px, 22vw, 340px)' }}
             />
           </div>
 
           <img
             src={project.images.col2}
             alt={`${project.name} main`}
-            className="w-full md:w-[60%] object-cover rounded-[16px] sm:rounded-[32px] md:rounded-[60px] h-[240px] sm:h-[320px] md:h-auto self-stretch"
+            className="w-full md:w-[60%] object-cover rounded-[16px] sm:rounded-[32px] md:rounded-[60px] h-auto self-stretch"
           />
         </div>
       </motion.div>

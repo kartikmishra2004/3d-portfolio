@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Mail, MessageCircle, Instagram, Github, Linkedin, Copy, Check, ExternalLink } from 'lucide-react';
+import { Mail, MessageCircle, Instagram, Github, Linkedin, Facebook, Copy, Check, ExternalLink } from 'lucide-react';
 import FadeIn from './FadeIn';
 
 export default function ContactSection() {
@@ -49,6 +49,14 @@ export default function ContactSection() {
       href: 'https://instagram.com/kmwork.shop',
     },
     {
+      type: 'facebook',
+      label: 'Facebook',
+      value: 'Kartik Mishra',
+      copyValue: 'https://www.facebook.com/profile.php?id=61589475123566',
+      icon: Facebook,
+      href: 'https://www.facebook.com/profile.php?id=61589475123566',
+    },
+    {
       type: 'github',
       label: 'GitHub',
       value: '@kartikmishra2004',
@@ -70,7 +78,7 @@ export default function ContactSection() {
     <motion.section
       id="contact"
       ref={sectionRef}
-      className="relative flex flex-col items-center justify-center py-16 sm:py-36 md:py-48 px-5 -mt-10 sm:-mt-12 md:-mt-14 z-30 w-full text-center"
+      className="relative flex flex-col items-center justify-center py-16 sm:py-36 md:py-20 px-5 -mt-10 sm:-mt-12 md:-mt-14 z-30 w-full text-center"
       style={{
         backgroundColor: '#0C0C0C',
         borderTopLeftRadius,
@@ -95,7 +103,7 @@ export default function ContactSection() {
 
           return (
             <FadeIn key={item.type} delay={0.3 + index * 0.1} y={30} className="w-full">
-              <div className="flex items-center justify-between gap-3 sm:gap-4 p-2.5 sm:p-5 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 w-full group text-left shadow-sm">
+              <div className="flex items-center justify-between gap-3 sm:gap-4 p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 w-full group text-left shadow-sm">
                 <div className="flex items-center gap-3 sm:gap-4 overflow-hidden">
                   <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-gradient-to-tr from-[#18011F] via-[#B600A8] to-[#BE4C00] flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
                     <Icon className="w-4 h-4 sm:w-6 sm:h-6" />

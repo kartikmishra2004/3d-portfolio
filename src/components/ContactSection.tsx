@@ -1,17 +1,9 @@
-import { useRef, useState } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Mail, MessageCircle, Instagram, Github, Linkedin, Facebook, Copy, Check, ExternalLink } from 'lucide-react';
 import FadeIn from './FadeIn';
 
 export default function ContactSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ['start end', 'start start'],
-  });
-
-  const borderTopLeftRadius = useTransform(scrollYProgress, [0.2, 1], ['60px', '0px']);
-  const borderTopRightRadius = useTransform(scrollYProgress, [0.2, 1], ['60px', '0px']);
 
   const [copiedType, setCopiedType] = useState<string | null>(null);
 
@@ -77,12 +69,9 @@ export default function ContactSection() {
   return (
     <motion.section
       id="contact"
-      ref={sectionRef}
-      className="relative flex flex-col items-center justify-center py-16 sm:py-36 md:py-20 px-5 -mt-10 sm:-mt-12 md:-mt-14 z-30 w-full text-center"
+      className="relative flex flex-col items-center justify-center py-16 sm:py-36 md:py-20 px-5 -mt-10 sm:-mt-12 md:-mt-14 z-30 w-full text-center rounded-t-[40px] sm:rounded-t-[60px] overflow-hidden"
       style={{
         backgroundColor: '#0C0C0C',
-        borderTopLeftRadius,
-        borderTopRightRadius,
       }}
     >
       <FadeIn delay={0} y={30}>

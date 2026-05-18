@@ -88,7 +88,7 @@ export default function ProjectsSection() {
 
   return (
     <motion.section
-      id="work"
+      id="portfolio"
       ref={containerRef}
       className="relative px-1.5 sm:px-8 md:px-12 -mt-10 sm:-mt-12 md:-mt-14 z-10 pb-24 sm:pb-32 md:pb-48"
       style={{
